@@ -1,0 +1,5 @@
+// {type:class}
+// {direction:topDown}
+// {generate: true}
+[Target|_adaptee]^-[Adapter|request(): calls _adaptee.specific_request()]
+[Target]++-1>[Adaptee|specific_request()]

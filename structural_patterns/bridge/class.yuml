@@ -1,0 +1,8 @@
+// {type:class}
+// {direction:topDown}
+// {generate:true}
+
+[note: client use Abstractor to call do() {bg:cornsilk}]
+[Abstractor|_impl]++-1>[Implementor|do()]
+[Implementor]^-[Implementor1]
+[Implementor]^-[Implementor2]
