@@ -1,0 +1,7 @@
+// {type:class}
+// {direction:topDown}
+// {generate:true}
+[Component|draw()]^-[Composite|+add(component)]
+[Component]^-[Circle]
+[Component]^-[Triangle]
+[Client]use->[Composite]

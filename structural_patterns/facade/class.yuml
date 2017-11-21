@@ -1,0 +1,6 @@
+// {type:class}
+// {direction:topDown}
+// {generate:true}
+
+[Facade]++-1>[SubSystem1]
+[Facade]++-1>[SubSystem2]
