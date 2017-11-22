@@ -1,0 +1,7 @@
+// {type:class}
+// {direction:topDown}
+// {generate:true}
+
+[FlyWeight]^-[ConcreteFlyWeight|+_instrinsic_state +_extrinsic_state]
+[client]->[Factory|+_flyweights|+get_flyweights]
+[Factory]++-n>[FlyWeight]
