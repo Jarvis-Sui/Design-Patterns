@@ -1,0 +1,7 @@
+// {type:class}
+// {direction:topDown}
+// {generate:true}
+
+[Subject| +do()]^-[Proxy| +_real_subject]
+[Subject]^-[RealSubject]
+[Proxy]uses -.->[RealSubject]
