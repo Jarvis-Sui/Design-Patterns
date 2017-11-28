@@ -1,0 +1,9 @@
+// {type:class}
+// {direction:topDown}
+// {generate: true}
+[Command|Light|+execute]^-[TurnOnCommand]
+[Command]^-[TurnOffCommand]
+[Command]+->[Light|+turnon() +turnoff()]
+[Switch|+execute()]
+[LightSwitchClient|-Light;-Switch|+press()]
+[note: press(cmd): call Switch.execute(Command(cmd)) {bg:cornsilk}]

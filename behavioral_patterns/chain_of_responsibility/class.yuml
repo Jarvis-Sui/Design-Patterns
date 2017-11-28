@@ -1,0 +1,6 @@
+// {type:class}
+// {direction:topDown}
+// {generate:true}
+
+[Handler|-successor|+handle_request()]^-[Handler1]
+[Handler]^-[Handler2]
